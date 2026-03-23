@@ -1,0 +1,13 @@
+{
+  "name": "sipgate-labs",
+  "owner": {
+    "name": "sipgate-labs"
+  },
+  "plugins": [
+    {
+      "name": "sipgate-api",
+      "source": "./",
+      "description": "Comprehensive guide for building with sipgate APIs — Flow, REST, Push, and SIP Stream Bridge."
+    }
+  ]
+}
