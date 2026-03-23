@@ -1,7 +1,7 @@
 {
   "name": "sipgate-api",
   "description": "Comprehensive guide for building with sipgate APIs — Flow (AI voice bots), REST (SMS, fax, calls, contacts, RTCM), Push (webhooks, IVR), and SIP Stream Bridge (raw audio, Twilio migration).",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "sipgate"
   }
