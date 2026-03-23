@@ -28,7 +28,7 @@ When installed, Claude Code gains deep knowledge of sipgate's four APIs and can 
 In Claude Code, run:
 
 ```
-/plugin marketplace add sipgate/sipgate-skill-labs
+/plugin marketplace add sipgate/sipgate-labs-api-skill
 /plugin install sipgate-api@sipgate-labs
 ```
 
