@@ -5,7 +5,7 @@
 | API | Auth Method | Header | Documentation |
 |-----|-------------|--------|---------------|
 | REST API | OAuth2 (recommended) | `Authorization: Bearer <token>` | [Auth Docs](https://en.sipgate.io/rest-api/authentication) |
-| REST API | Personal Access Token | `Authorization: Basic <base64>` | [PAT Settings](https://app.sipgate.com/personal-access-token) |
+| REST API | Personal Access Token (⚠️ prototyping only) | `Authorization: Basic <base64>` | [PAT Settings](https://app.sipgate.com/personal-access-token) |
 | Flow API | Shared Secret | `X-API-TOKEN: <secret>` | [Flow Reference](https://sipgate.github.io/sipgate-ai-flow-api/LLM_REFERENCE.txt) |
 | Push API | URL Registration | N/A (webhook URL configured in UI) | [Push API Docs](https://en.sipgate.io/push-api/api-references) |
 

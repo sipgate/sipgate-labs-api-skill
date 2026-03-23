@@ -54,7 +54,7 @@ Caller speaks ──→ [user_speak] ──→ Flow App
 4. If caller asks about a contact: REST API `GET /contacts` for lookup
 5. Respond with information or `transfer` action
 
-**Auth**: Flow API (shared secret) + REST API (OAuth2 or PAT for internal lookups)
+**Auth**: Flow API (shared secret) + REST API (OAuth2 recommended; PAT only for prototyping — PATs grant full account access)
 
 ---
 

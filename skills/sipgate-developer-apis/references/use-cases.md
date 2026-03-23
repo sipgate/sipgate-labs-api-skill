@@ -67,7 +67,8 @@ This reference describes concrete use cases for sipgate APIs. Each use case expl
 **API**: [REST API](https://api.sipgate.com/v2/doc) — `POST /sessions/sms`
 
 **Steps**:
-1. Authenticate via OAuth2 or PAT (see `references/authentication.md`)
+1. Authenticate via OAuth2 (recommended) or PAT (see `references/authentication.md`)
+   > ⚠️ PATs grant full account access — use OAuth2 for production.
 2. Get the SMS-capable device ID via `GET /devices`
 3. Send the SMS:
    ```bash
@@ -90,7 +91,8 @@ This reference describes concrete use cases for sipgate APIs. Each use case expl
 **API**: [REST API](https://api.sipgate.com/v2/doc) — `POST /sessions/fax`
 
 **Steps**:
-1. Authenticate via OAuth2 or PAT
+1. Authenticate via OAuth2 (recommended) or PAT
+   > ⚠️ PATs grant full account access — use OAuth2 for production.
 2. Get the fax-capable device ID via `GET /devices`
 3. Send the fax with the PDF as base64-encoded content:
    ```bash

@@ -28,7 +28,7 @@ Full Swagger documentation: [api.sipgate.com/v2/doc](https://api.sipgate.com/v2/
 See `references/authentication.md` for full details.
 
 - **OAuth2** (recommended): `Authorization: Bearer <access_token>` — [Auth Docs](https://en.sipgate.io/rest-api/authentication)
-- **Personal Access Token**: `Authorization: Basic <base64(tokenId:token)>` — [Create PAT](https://app.sipgate.com/personal-access-token)
+- **Personal Access Token** (⚠️ prototyping only): `Authorization: Basic <base64(tokenId:token)>` — [Create PAT](https://app.sipgate.com/personal-access-token)
 
 > **WARNING**: Personal Access Tokens grant full account access. Never commit them to repositories or use in client-side code. Use only for personal scripts, CLI tools, and prototyping. For production applications, always use OAuth2.
 
