@@ -331,6 +331,19 @@ All contact endpoints: Scopes `contacts:read` / `contacts:write`
 
 ## Devices
 
+### Getting the userId
+
+Many device endpoints require a `userId` parameter (e.g. `w0`). This value is **not** the same as the OIDC `providerAccountId` from the OAuth token (which has a format like `f:2e724444-...:2778579`).
+
+The correct `userId` comes exclusively from:
+
+```bash
+curl -H "Authorization: Bearer ACCESS_TOKEN" \
+  "https://api.sipgate.com/v2/authorization/userinfo"
+```
+
+Use the `sub` field from the response (e.g. `w0`) as the `userId` for all device API calls.
+
 ### List Devices (v3)
 
 ```bash
@@ -338,6 +351,8 @@ curl -H "Authorization: Bearer ACCESS_TOKEN" \
   "https://api.sipgate.com/v3/devices?userId=w0"
 ```
 Scope: `devices:read`
+
+> **Hinweis**: Es gibt auch `GET /v2/{userId}/devices`, aber dieser Endpoint liefert **kein** `sipCredentials`-Feld zurück. Für SIP/WebRTC-Credentials muss zwingend `/v3/devices` verwendet werden.
 
 ### SIP Credentials
 
