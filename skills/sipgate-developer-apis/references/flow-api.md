@@ -12,6 +12,18 @@ This document contains the complete, up-to-date Flow API specification (~3,500 l
 
 ---
 
+## Setup
+
+1. Go to [sipgate AI Flows](https://app.sipgate.com/ai-flows)
+2. Click "+" to add a new AI Flow endpoint
+3. Fill in: **Name**, **Webhook/Websocket URL** (your application endpoint), **Ausgehender API Token** (shared secret for `X-API-TOKEN` validation)
+4. Set **Anruf annehmen nach X Sekunden** (auto-answer delay)
+5. Select **Anbieter für Speech-to-Text** (e.g., Microsoft Azure)
+6. Click **Speichern**
+7. Assign the Flow endpoint to a phone number via your sipgate routing settings
+
+---
+
 ## Common Mistakes
 
 - **Response timeout**: Your application must respond within **1 second**. Slow LLM responses or blocking I/O will cause the call to hang up.

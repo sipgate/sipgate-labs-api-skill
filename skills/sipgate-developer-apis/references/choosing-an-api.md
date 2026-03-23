@@ -86,7 +86,7 @@ See `references/common-patterns.md` for detailed implementation patterns with se
 |-----|-------------|---------|
 | REST API | OAuth2 (recommended) or PAT (⚠️ prototyping only) | [Authentication Guide](https://en.sipgate.io/rest-api/authentication) |
 | Flow API | Shared Secret | `X-API-TOKEN` header validation |
-| Push API | Webhook URL | Configure in sipgate settings |
+| Push API | Webhook URL | Configure in [sipgate.io Webhooks](https://app.sipgate.com/io/hooks) |
 | SIP Stream Bridge | SIP credentials | Trunking device credentials |
 
 See `references/authentication.md` for full details.

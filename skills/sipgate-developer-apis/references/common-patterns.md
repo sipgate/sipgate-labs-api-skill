@@ -218,7 +218,7 @@ Call ends
 | **SIP Stream Bridge** | Real-time audio for custom analysis pipeline | Only way to access raw audio with custom STT/sentiment/keyword detection |
 
 **Implementation**:
-1. **Push API Server**: Configure webhook URL in [sipgate.io Settings](https://console.sipgate.com), implement business hours logic + `<Gather>` DTMF menu ([Push API Docs](https://en.sipgate.io/push-api/api-references))
+1. **Push API Server**: Configure webhook URL in [sipgate.io Webhooks](https://app.sipgate.com/io/hooks), implement business hours logic + `<Gather>` DTMF menu ([Push API Docs](https://en.sipgate.io/push-api/api-references))
 2. **Flow API App**: Install [Flow SDK](https://www.npmjs.com/package/@sipgate/ai-flow-sdk), build AI bot with LLM integration for pre-qualification, `transfer` action when needed
 3. **REST/RTCM Integration**: OAuth2 authentication with scopes `contacts:read`, `rtcm:write`, `sessions:sms:write`, `events:write` ([Swagger Docs](https://api.sipgate.com/v2/doc))
 4. **SIP Stream Bridge**: Deploy Docker container with SIP credentials from trunking account, WebSocket target pointing to your analysis pipeline ([Bridge Docs](https://sipgate.github.io/sipgate-sip-stream-bridge/))

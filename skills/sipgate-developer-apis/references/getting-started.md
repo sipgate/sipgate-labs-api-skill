@@ -20,11 +20,14 @@
 
 Follow the guide at [Building a Third-Party Application](https://en.sipgate.io/rest-api/building-a-third-party-application):
 
-1. Go to [sipgate Console](https://console.sipgate.com) or your sipgate account settings
-2. Register a new OAuth2 client
-3. Note your **Client ID** and **Client Secret**
-4. Configure your **Redirect URI** (e.g., `http://localhost:3000/callback` for development)
-5. Select the required **OAuth2 scopes** — [Scope Reference](https://en.sipgate.io/rest-api/oauth2-scopes)
+1. Go to [sipgate API Clients](https://app.sipgate.com/api-clients)
+2. Click "+" to add a new API client
+3. Fill in: **Name**, **Beschreibung** (description), **URL zur Datenschutzerklärung** (privacy policy URL), **URL zu den Nutzungsbedingungen** (terms of service URL)
+4. Click **Speichern** — you'll be taken to the client detail page
+5. Note your **Client ID** and **Client Secret** (shown at the top)
+6. Under **Redirect URIs**, click **+ Hinzufügen** to add your redirect URI (e.g., `http://localhost:3000/callback` for development)
+7. Under **Web Origins**, add your web origin if needed (for browser-based apps)
+8. Select the required **OAuth2 scopes** — [Scope Reference](https://en.sipgate.io/rest-api/oauth2-scopes)
 
 ---
 

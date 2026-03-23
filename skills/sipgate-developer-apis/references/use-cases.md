@@ -13,7 +13,7 @@ This reference describes concrete use cases for sipgate APIs. Each use case expl
 **API**: [Flow API](https://sipgate.github.io/sipgate-ai-flow-api/LLM_REFERENCE.txt) — always use the [SDK (`@sipgate/ai-flow-sdk`)](https://www.npmjs.com/package/@sipgate/ai-flow-sdk)
 
 **Steps**:
-1. Set up a Flow API application with shared secret authentication
+1. Set up a Flow API endpoint in [sipgate AI Flows](https://app.sipgate.com/ai-flows) with shared secret authentication
 2. Install the TypeScript SDK: `npm install @sipgate/ai-flow-sdk`
 3. Handle `session_start` to greet the caller
 4. Process `user_speak` events with your AI/LLM and respond via `speak` actions
@@ -30,7 +30,7 @@ This reference describes concrete use cases for sipgate APIs. Each use case expl
 **API**: [Push API](https://en.sipgate.io/push-api/api-references) with Gather/DTMF actions
 
 **Steps**:
-1. Configure a webhook URL in [sipgate.io settings](https://en.sipgate.io/push-api/api-references)
+1. Configure a webhook URL in [sipgate.io Webhooks](https://app.sipgate.com/io/hooks)
 2. On `newCall` event, respond with `<Gather>` XML to collect digits
 3. On `onData` callback, read the `dtmf` parameter for the pressed digits
 4. Respond with `<Dial>` to route to the appropriate destination

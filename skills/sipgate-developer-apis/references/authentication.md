@@ -7,7 +7,7 @@
 | REST API | OAuth2 (recommended) | `Authorization: Bearer <token>` | [Auth Docs](https://en.sipgate.io/rest-api/authentication) |
 | REST API | Personal Access Token (⚠️ prototyping only) | `Authorization: Basic <base64>` | [PAT Settings](https://app.sipgate.com/personal-access-token) |
 | Flow API | Shared Secret | `X-API-TOKEN: <secret>` | [Flow Reference](https://sipgate.github.io/sipgate-ai-flow-api/LLM_REFERENCE.txt) |
-| Push API | URL Registration | N/A (webhook URL configured in UI) | [Push API Docs](https://en.sipgate.io/push-api/api-references) |
+| Push API | URL Registration | N/A (configure in [sipgate.io Webhooks](https://app.sipgate.com/io/hooks)) | [Push API Docs](https://en.sipgate.io/push-api/api-references) |
 
 ---
 
@@ -132,7 +132,7 @@ The shared secret is configured when setting up your Flow API application in sip
 
 ## Push API Authentication
 
-The Push API does not use traditional API authentication. Instead, you configure a webhook URL in the sipgate web interface, and sipgate sends POST requests to that URL. [Push API Setup](https://en.sipgate.io/push-api/api-references)
+The Push API does not use traditional API authentication. Instead, you configure a webhook URL in [sipgate.io Webhooks](https://app.sipgate.com/io/hooks), and sipgate sends POST requests to that URL. [Push API Setup](https://en.sipgate.io/push-api/api-references)
 
 ### Security Recommendations
 

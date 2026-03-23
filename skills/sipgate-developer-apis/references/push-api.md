@@ -18,9 +18,9 @@ Official documentation: [Push API Reference](https://en.sipgate.io/push-api/api-
 ## Setup
 
 1. Log in to your sipgate account
-2. Enable sipgate.io in your account settings
-3. Configure your webhook URL (must be publicly accessible)
-4. Select which phone numbers/extensions trigger webhooks
+2. Go to [sipgate.io Webhooks](https://app.sipgate.com/io/hooks)
+3. Configure your incoming/outgoing webhook URLs (must be publicly accessible)
+4. Under **Quellen**, select which phone numbers/extensions trigger webhooks
 
 Details: [Push API Setup](https://en.sipgate.io/push-api/api-references)
 
