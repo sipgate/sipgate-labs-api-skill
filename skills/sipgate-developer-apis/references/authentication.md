@@ -30,13 +30,13 @@ The standard authentication method for production applications. Uses the [Author
 | Purpose | URL |
 |---------|-----|
 | Authorization | `https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/auth` |
-| Token Exchange | `https://api.sipgate.com/login/third-party/protocol/openid-connect/token` |
+| Token Exchange | `https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token` |
 | Userinfo | `https://api.sipgate.com/v2/authorization/userinfo` |
 
 ### Token Exchange (cURL)
 
 ```bash
-curl -X POST "https://api.sipgate.com/login/third-party/protocol/openid-connect/token" \
+curl -X POST "https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "client_id=YOUR_CLIENT_ID" \
   -d "client_secret=YOUR_CLIENT_SECRET" \
@@ -48,7 +48,7 @@ curl -X POST "https://api.sipgate.com/login/third-party/protocol/openid-connect/
 ### Token Refresh (cURL)
 
 ```bash
-curl -X POST "https://api.sipgate.com/login/third-party/protocol/openid-connect/token" \
+curl -X POST "https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "client_id=YOUR_CLIENT_ID" \
   -d "client_secret=YOUR_CLIENT_SECRET" \

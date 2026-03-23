@@ -40,7 +40,7 @@ This is the recommended authentication method for all production applications. I
 | Endpoint | URL |
 |----------|-----|
 | Authorization | `https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/auth` |
-| Token | `https://api.sipgate.com/login/third-party/protocol/openid-connect/token` |
+| Token | `https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token` |
 | Userinfo | `https://api.sipgate.com/v2/authorization/userinfo` |
 
 ### Step 1: Redirect User to sipgate Login
@@ -69,7 +69,7 @@ Always verify the `state` parameter matches what you sent.
 ### Step 3: Exchange Code for Tokens
 
 ```bash
-curl -X POST "https://api.sipgate.com/login/third-party/protocol/openid-connect/token" \
+curl -X POST "https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "client_id=YOUR_CLIENT_ID" \
   -d "client_secret=YOUR_CLIENT_SECRET" \
@@ -101,7 +101,7 @@ curl -H "Authorization: Bearer ACCESS_TOKEN" \
 Access tokens expire after ~5 minutes. Use the refresh token:
 
 ```bash
-curl -X POST "https://api.sipgate.com/login/third-party/protocol/openid-connect/token" \
+curl -X POST "https://login.sipgate.com/auth/realms/third-party/protocol/openid-connect/token" \
   -H "Content-Type: application/x-www-form-urlencoded" \
   -d "client_id=YOUR_CLIENT_ID" \
   -d "client_secret=YOUR_CLIENT_SECRET" \
